@@ -10,3 +10,6 @@ To execute this application you have to:
 * run the dependencies with bundle
 * run the db migrations with rake
 * execute the server
+
+Demo on heroku: 
+http://uaming-application.herokuapp.com
