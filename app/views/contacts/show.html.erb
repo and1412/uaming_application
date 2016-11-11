@@ -22,7 +22,7 @@
     <tbody>
       <% @contact_events.each do |e| %>
         <tr>
-          <td><%= e.resource %></td>
+          <td><%= e.resource.split("/").last %></td>
           <td><%= e.event_date %></td>
         </tr>
       <% end %>
