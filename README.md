@@ -1,24 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application implements a API REST to receive the events sent from UAMing (javascript module).
+To execute this application you have to:
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* clone the source code;
+* install ruby 2.3.0 and rails 5;
+* install postgresql-9.3;
+* postgresql => create user with password based on database.yml;
+* run the dependencies with bundle
+* run the db migrations with rake
+* execute the server
