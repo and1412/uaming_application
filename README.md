@@ -1,4 +1,4 @@
-# README
+# UAMing Application
 
 This application implements a API REST to receive the events sent from UAMing (javascript module).
 To execute this application you have to:
