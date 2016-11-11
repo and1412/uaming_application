@@ -1,0 +1,36 @@
+<p>
+  <strong>Email:</strong>
+  <%= @contact.email %>
+</p>
+
+<p>
+  <strong>Message:</strong>
+  <%= @contact.message %>
+</p>
+
+<h3>Eventos</h3>
+
+<div class="table-responsive">
+  <table class="table table-striped table-bordered table-hover">
+    <thead>
+      <tr>
+        <th>Resource</th>
+        <th>Date</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @contact_events.each do |e| %>
+        <tr>
+          <td><%= e.resource %></td>
+          <td><%= e.event_date %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+<%= will_paginate @contact_events %>
+<br>
+<br>
+<%= link_to 'Back', contacts_path %>

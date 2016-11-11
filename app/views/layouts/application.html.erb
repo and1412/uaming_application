@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>UamingApp</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>    
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  	<div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills float-xs-right">
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="alert('Click it better!!!!')">Click Here</a>
+            </li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">UAMing The Application</h3>
+      </div>
+      <%= yield %>
+      <footer class="footer">
+        <p>&copy; Uaming Application 2016</p>
+      </footer>
+    </div>
+    
+  </body>
+</html>
